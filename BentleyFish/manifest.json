@@ -1,0 +1,16 @@
+{
+  "Name": "BentleyPlayz Fish & Rod (Core)",
+  "Author": "BentleyPlayz",
+  "Version": "1.0.3",
+  "Description": "Logic for BentleyPlayz Fish & Rod: the rod only boosts catches while held, plus bonus damage for eating raw Windex Fish and Tide Pod Trout.",
+  "UniqueID": "BentleyPlayz.BentleyFishCore",
+  "EntryDll": "BentleyPlayz.BentleyFishCore.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    }
+  ]
+}

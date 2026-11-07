@@ -1,0 +1,450 @@
+{
+  "Format": "2.5.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "BentleyPlayz.BentleyFish_Windex": {
+          "Name": "BentleyPlayz.BentleyFish_Windex",
+          "DisplayName": "{{i18n:Windex.name}}",
+          "Description": "{{i18n:Windex.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 150,
+          "Edibility": -30,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_TidePodTrout": {
+          "Name": "BentleyPlayz.BentleyFish_TidePodTrout",
+          "DisplayName": "{{i18n:TidePodTrout.name}}",
+          "Description": "{{i18n:TidePodTrout.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 120,
+          "Edibility": -20,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_BentleyBass": {
+          "Name": "BentleyPlayz.BentleyFish_BentleyBass",
+          "DisplayName": "{{i18n:BentleyBass.name}}",
+          "Description": "{{i18n:BentleyBass.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Edibility": 30,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_NuggetCarp": {
+          "Name": "BentleyPlayz.BentleyFish_NuggetCarp",
+          "DisplayName": "{{i18n:NuggetCarp.name}}",
+          "Description": "{{i18n:NuggetCarp.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 90,
+          "Edibility": 25,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_FryFlounder": {
+          "Name": "BentleyPlayz.BentleyFish_FryFlounder",
+          "DisplayName": "{{i18n:FryFlounder.name}}",
+          "Description": "{{i18n:FryFlounder.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 140,
+          "Edibility": 28,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_ShakeMinnow": {
+          "Name": "BentleyPlayz.BentleyFish_ShakeMinnow",
+          "DisplayName": "{{i18n:ShakeMinnow.name}}",
+          "Description": "{{i18n:ShakeMinnow.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 75,
+          "Edibility": 20,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 5,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_PixelPerch": {
+          "Name": "BentleyPlayz.BentleyFish_PixelPerch",
+          "DisplayName": "{{i18n:PixelPerch.name}}",
+          "Description": "{{i18n:PixelPerch.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 250,
+          "Edibility": 35,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 6,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_GlitchGuppy": {
+          "Name": "BentleyPlayz.BentleyFish_GlitchGuppy",
+          "DisplayName": "{{i18n:GlitchGuppy.name}}",
+          "Description": "{{i18n:GlitchGuppy.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 300,
+          "Edibility": 15,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 7,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_LagEel": {
+          "Name": "BentleyPlayz.BentleyFish_LagEel",
+          "DisplayName": "{{i18n:LagEel.name}}",
+          "Description": "{{i18n:LagEel.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 350,
+          "Edibility": 40,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 8,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_KetchupKoi": {
+          "Name": "BentleyPlayz.BentleyFish_KetchupKoi",
+          "DisplayName": "{{i18n:KetchupKoi.name}}",
+          "Description": "{{i18n:KetchupKoi.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 180,
+          "Edibility": 30,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 9,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_MustardMackerel": {
+          "Name": "BentleyPlayz.BentleyFish_MustardMackerel",
+          "DisplayName": "{{i18n:MustardMackerel.name}}",
+          "Description": "{{i18n:MustardMackerel.desc}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 160,
+          "Edibility": 30,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 10,
+          "ContextTags": [
+            "fish_freshwater",
+            "bentleyplayz_fish"
+          ]
+        },
+        "BentleyPlayz.BentleyFish_WindexFillet": {
+          "Name": "BentleyPlayz.BentleyFish_WindexFillet",
+          "DisplayName": "{{i18n:Fillet.name}}",
+          "Description": "{{i18n:Fillet.desc}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 260,
+          "Edibility": 60,
+          "Texture": "{{InternalAssetKey: assets/fish.png}}",
+          "SpriteIndex": 11
+        }
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "BentleyPlayz.BentleyFish_Windex": "BentleyPlayz.BentleyFish_Windex/45/mixed/4/18/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/0/false",
+        "BentleyPlayz.BentleyFish_TidePodTrout": "BentleyPlayz.BentleyFish_TidePodTrout/50/dart/6/24/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/0/false",
+        "BentleyPlayz.BentleyFish_BentleyBass": "BentleyPlayz.BentleyFish_BentleyBass/55/smooth/10/34/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/1/false",
+        "BentleyPlayz.BentleyFish_NuggetCarp": "BentleyPlayz.BentleyFish_NuggetCarp/30/mixed/8/28/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/0/false",
+        "BentleyPlayz.BentleyFish_FryFlounder": "BentleyPlayz.BentleyFish_FryFlounder/40/sinker/8/30/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/1/false",
+        "BentleyPlayz.BentleyFish_ShakeMinnow": "BentleyPlayz.BentleyFish_ShakeMinnow/25/floater/3/12/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/0/false",
+        "BentleyPlayz.BentleyFish_PixelPerch": "BentleyPlayz.BentleyFish_PixelPerch/65/dart/8/26/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/2/false",
+        "BentleyPlayz.BentleyFish_GlitchGuppy": "BentleyPlayz.BentleyFish_GlitchGuppy/75/dart/2/10/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/3/false",
+        "BentleyPlayz.BentleyFish_LagEel": "BentleyPlayz.BentleyFish_LagEel/80/smooth/20/60/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/4/false",
+        "BentleyPlayz.BentleyFish_KetchupKoi": "BentleyPlayz.BentleyFish_KetchupKoi/60/mixed/10/36/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/2/false",
+        "BentleyPlayz.BentleyFish_MustardMackerel": "BentleyPlayz.BentleyFish_MustardMackerel/50/mixed/10/32/600 2600/spring summer fall winter/both/690 .4 .1/1/.1/.1/1/false"
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Entries": {
+        "BentleyPlayz.BentleyFish_Windex_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_Windex_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_Windex",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_TidePodTrout_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_TidePodTrout_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_TidePodTrout",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_BentleyBass_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_BentleyBass_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_BentleyBass",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_NuggetCarp_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_NuggetCarp_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_NuggetCarp",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_FryFlounder_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_FryFlounder_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_FryFlounder",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_ShakeMinnow_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_ShakeMinnow_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_ShakeMinnow",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_PixelPerch_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_PixelPerch_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_PixelPerch",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_GlitchGuppy_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_GlitchGuppy_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_GlitchGuppy",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_LagEel_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_LagEel_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_LagEel",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_KetchupKoi_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_KetchupKoi_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_KetchupKoi",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        },
+        "BentleyPlayz.BentleyFish_MustardMackerel_Spawn": {
+          "Id": "BentleyPlayz.BentleyFish_MustardMackerel_Spawn",
+          "ItemId": "(O)BentleyPlayz.BentleyFish_MustardMackerel",
+          "Chance": 0.0105,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": false,
+          "ChanceModifiers": [
+            {
+              "Id": "RodBoost",
+              "Condition": "BentleyPlayz.BentleyFish_HOLDING_ROD",
+              "Modification": "Set",
+              "Amount": 0.2057
+            }
+          ],
+          "ChanceModifierMode": "Stack"
+        }
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "BentleyPlayz.BentleyFish_WindexFillet": "BentleyPlayz.BentleyFish_Windex 1 -81 1/10 10/BentleyPlayz.BentleyFish_WindexFillet 1/default/{{i18n:Fillet.name}}"
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Tools",
+      "Entries": {
+        "BentleyPlayz.BentleyFish_Rod": {
+          "ClassName": "FishingRod",
+          "Name": "BentleyPlayz.BentleyFish_Rod",
+          "DisplayName": "{{i18n:Rod.name}}",
+          "Description": "{{i18n:Rod.desc}}",
+          "Texture": "{{InternalAssetKey: assets/rod.png}}",
+          "SpriteIndex": 0,
+          "MenuSpriteIndex": 0,
+          "UpgradeLevel": 3,
+          "ApplyUpgradeLevelToDisplayName": false,
+          "AttachmentSlots": 2,
+          "SalePrice": 1500,
+          "CanBeLostOnDeath": false
+        }
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Entries": {
+        "BentleyPlayz.BentleyFish_Rod": {
+          "Id": "BentleyPlayz.BentleyFish_Rod",
+          "ItemId": "(T)BentleyPlayz.BentleyFish_Rod",
+          "Price": 1500
+        }
+      },
+      "When": {
+        "BentleyPlayz.BentleyFishCore/Enabled": "true"
+      }
+    }
+  ]
+}
