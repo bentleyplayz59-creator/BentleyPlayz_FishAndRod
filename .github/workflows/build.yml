@@ -1,0 +1,54 @@
+name: Build Stardew Valley Mod
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Setup SMAPI build environment
+        uses: Pathoschild/SMAPI-ModBuildWorkflow/add-build-environment@v1
+
+      - name: Restore dependencies
+        run: dotnet restore BentleyFish/BentleyFish.csproj
+
+      - name: Build mod
+        run: dotnet build BentleyFish/BentleyFish.csproj --configuration Release --no-restore
+
+      - name: Verify DLL was built
+        run: |
+          DLL="BentleyFish/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.dll"
+          test -f "$DLL" || { echo "DLL missing: $DLL"; exit 1; }
+          grep -q '"EntryDll": "BentleyPlayz.BentleyFishCore.dll"' BentleyFish/manifest.json || { echo "manifest EntryDll mismatch"; exit 1; }
+          ls -l "$DLL"
+
+      - name: Package full mod (DLL + content pack)
+        run: |
+          PKG="_releases/package/BentleyPlayz_FishAndRod"
+          mkdir -p "$PKG/BentleyFish" "$PKG/[CP] BentleyFish"
+          cp BentleyFish/manifest.json BentleyFish/config.json "$PKG/BentleyFish/"
+          cp BentleyFish/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.dll "$PKG/BentleyFish/"
+          cp BentleyFish/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.pdb "$PKG/BentleyFish/" || true
+          cp -r "[CP] BentleyFish/." "$PKG/[CP] BentleyFish/"
+          (cd _releases/package && zip -qr ../BentleyPlayz_FishAndRod_1.0.3.zip BentleyPlayz_FishAndRod)
+          unzip -l _releases/BentleyPlayz_FishAndRod_1.0.3.zip
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BentleyPlayz_FishAndRod
+          path: _releases/BentleyPlayz_FishAndRod_1.0.3.zip

@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <EnableModDeploy>false</EnableModDeploy>
+    <ModZipPath>$(MSBuildThisFileDirectory)_releases</ModZipPath>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Platform>AnyCPU</Platform>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+</Project>
