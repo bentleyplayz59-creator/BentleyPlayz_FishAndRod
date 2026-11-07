@@ -1,0 +1,65 @@
+name: Build Stardew Valley Mod
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Setup SMAPI build environment
+        uses: Pathoschild/SMAPI-ModBuildWorkflow/add-build-environment@v1
+
+      - name: Restore dependencies
+        run: dotnet restore src/BentleyFishCore.csproj
+
+      - name: Build mod
+        run: dotnet build src/BentleyFishCore.csproj --configuration Release --no-restore
+
+      - name: Verify DLL and manifest
+        run: |
+          DLL="src/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.dll"
+          test -f "$DLL"
+          grep -Fq '"EntryDll": "BentleyPlayz.BentleyFishCore.dll"' "mod/BentleyPlayz_FishAndRod/BentleyFish/manifest.json"
+          ls -l "$DLL"
+
+      - name: Package full mod
+        run: |
+          PKG="_releases/package/BentleyPlayz_FishAndRod"
+          mkdir -p "$PKG/BentleyFish" "$PKG/[CP] BentleyFish"
+
+          cp "mod/BentleyPlayz_FishAndRod/BentleyFish/manifest.json" "$PKG/BentleyFish/"
+          cp "mod/BentleyPlayz_FishAndRod/BentleyFish/config.json" "$PKG/BentleyFish/"
+          cp "src/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.dll" "$PKG/BentleyFish/"
+
+          if [ -f "src/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.pdb" ]; then
+            cp "src/bin/Release/net6.0/BentleyPlayz.BentleyFishCore.pdb" "$PKG/BentleyFish/"
+          fi
+
+          cp -r "mod/BentleyPlayz_FishAndRod/[CP] BentleyFish/." "$PKG/[CP] BentleyFish/"
+
+          mkdir -p _releases
+          (cd _releases/package && zip -qr ../BentleyPlayz_FishAndRod_1.1.0.zip BentleyPlayz_FishAndRod)
+          unzip -l _releases/BentleyPlayz_FishAndRod_1.1.0.zip
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BentleyPlayz_FishAndRod_1.1.0
+          path: _releases/BentleyPlayz_FishAndRod_1.1.0.zip

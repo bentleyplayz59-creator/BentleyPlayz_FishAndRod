@@ -1,0 +1,19 @@
+{
+  "Name": "BentleyPlayz Fish & Rod",
+  "Author": "BentleyPlayz",
+  "Version": "1.1.0",
+  "Description": "Adds 11 new fish (every season, every water) plus the BentleyPlayz Rod, which makes them bite almost every cast.",
+  "UniqueID": "BentleyPlayz.BentleyFish",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.0.0"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "BentleyPlayz.BentleyFishCore",
+      "IsRequired": true
+    }
+  ]
+}

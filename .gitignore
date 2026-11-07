@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+build/
+stage/
+dist/
+
+# Local Stardew Valley and SMAPI references
+refs/*.dll
+
+# Editor files
+.vscode/
+*.user
+*.suo
+
+# Temporary files
+*.tmp
+*.bak
+
+# Local pre-patch backups
+*.prepatch

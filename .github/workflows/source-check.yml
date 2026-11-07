@@ -1,0 +1,61 @@
+name: Source Validation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate project files and JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          required = [
+              "README.txt",
+              "build.sh",
+              "src/BentleyFishCore.csproj",
+              "src/ModEntry.cs",
+              "src/ModConfig.cs",
+              "mod/BentleyPlayz_FishAndRod/BentleyFish/manifest.json",
+              "mod/BentleyPlayz_FishAndRod/[CP] BentleyFish/manifest.json",
+              "mod/BentleyPlayz_FishAndRod/[CP] BentleyFish/content.json",
+          ]
+
+          missing = [f for f in required if not Path(f).is_file()]
+          if missing:
+              raise RuntimeError("Missing required files: " + ", ".join(missing))
+
+          files = list(Path("mod").rglob("*.json"))
+          for file in files:
+              with file.open(encoding="utf-8") as stream:
+                  json.load(stream)
+              print("Valid JSON:", file)
+
+          print("Project structure and JSON validation passed.")
+          PY
+
+      - name: Save source artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BentleyPlayz-FishAndRod-source
+          path: |
+            README.txt
+            build.sh
+            .gitignore
+            src/
+            mod/
